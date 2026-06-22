@@ -33,6 +33,7 @@ st.sidebar.caption(f"Attempts allowed: {attempt_limit}")
 if "secret" not in st.session_state:
     st.session_state.secret = random.randint(low, high)
 
+# changing attempts from 1 to 0 to reflect the correct attempt count before the first guess is made.
 if "attempts" not in st.session_state:
     st.session_state.attempts = 0
 
