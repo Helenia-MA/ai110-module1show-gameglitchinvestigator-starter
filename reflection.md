@@ -50,7 +50,9 @@ Console/Output error: none
 Copilot, Claude
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 
-It helped in pinpointing that there was more than one logic causing the bug in the score value, and helped in debugging the attempts logic bug since one of the score calculation logic was dependent on it too.
+It helped in pinpointing that there was more than one logic causing the bug in the score value:
+one was the parity logic that had been added although it didn't really make sense based on the logic of the game and the second was the winning score logic where the calculation used 'atempt + 1' instead of 'attempt - 1'.
+It also helped in debugging the attempts logic bug since one of the score calculation logic as seen above, was dependent on it.
 I verified the results by asking it to generate pytests and by confirming the logic worked correctly in the game.
 
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
